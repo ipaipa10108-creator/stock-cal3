@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes flashUp {
+    0% { background-color: rgba(244, 63, 94, 0.35); }
+    100% { background-color: transparent; }
+  }
+
+  @keyframes flashDown {
+    0% { background-color: rgba(16, 185, 129, 0.35); }
+    100% { background-color: transparent; }
+  }
+
+  .flash-up {
+    animation: flashUp 1.2s ease-out;
+  }
+
+  .flash-down {
+    animation: flashDown 1.2s ease-out;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
